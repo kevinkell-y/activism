@@ -231,7 +231,7 @@ section .title::after{
   ABOUT SECTION
 
 =================================*/
-.about, .services, .subscribe-box {
+.about, .services, .newsletter{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -328,6 +328,7 @@ section .title::after{
 .services {
     color: #fff;
     background: #111;
+    min-height: 80vh;
 }
 
 .services .title::before {
@@ -383,9 +384,74 @@ section .title::after{
   NEWSLETTER SUBSCRIBE SECTION
 
 =================================*/
+.newsletter {
+
+}
+.newsletter-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    /*min-height: 70vh;*/
+}
+
+.newsletter-box {
+    background: #222;
+    width: 100%;
+    min-height: 40vh;
+    padding: 50px 4% 18px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.newsletter-box h1 {
+    font-size: 40px;
+}
+
+.newsletter-box p {
+    padding-bottom: 5px;
+}
+
+.newsletter-box input[type="text"] {
+    width: calc(80% - 120px);
+    height: 50px;
+    float: left;
+    font-size: 18px;
+    color: #000;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-right: .4em;
+    line-height: 30px;
+    border: 2px solid transparent;
 
 
+}
 
+.newsletter-box input[type="text"]:hover {
+    border-color:  #ed1556;
+}
+
+.newsletter-box input[type=submit] {
+    width: 120px;
+    height: 50px;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: #ed1556;
+    border-radius: 6px;
+    padding: 10px 15px;
+    line-height: 30px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.newsletter-box input[type=submit]:hover {
+    -moz-box-shadow: 0px 0px 4px 1px white;
+    -webkit-box-shadow: 0px 0px 4px 1px white;
+    box-shadow: 0px 0px 4px 1px white;
+}
 
 
 /*===============================
@@ -576,21 +642,30 @@ footer span {
   .home .max-width {
     margin-left: 0px;
   }
+  .about .carousel .card img {
+      height: 250px;
+      width: 300px;
+  }
+  .about .carousel .card .text {
+      font-size: 1.4em;
+      margin: 8px 0 7px 0;
+  }
 }
 @media (max-width: 1200px){
-    .about .title {
-      margin-bottom: 30px;
-    }
-    .about .about-content h3 {
-        font-size: 18px;
-        margin-bottom: 0;
-    }
     section {
       padding: 80px 30px;
     }
-    #gallery {
-      padding: 0 25px;
-      margin: auto;
+
+    .about .title {
+      margin-bottom: 30px;
+    }
+    .about .carousel .card img {
+        height: 225px;
+        width: 250px;
+    }
+    .about .carousel .card .text {
+        font-size: 1em;
+
     }
 
 }
@@ -653,6 +728,23 @@ footer span {
       padding: 60px 0;
   }
 }
+@media (max-width: 999px){
+    .about .carousel .card img {
+        height: 250px;
+        width: 325px;
+    }
+    .about .carousel .card .text {
+        font-size: 1em;
+
+    }
+}
+@media (max-width: 815px) {
+    .about .carousel .card img {
+        height: 100%;
+        width: 250px;
+    }
+}
+
 @media (max-width:764px) {
 
   .home .home-content h2 {
@@ -711,6 +803,16 @@ footer span {
       padding-top: 1px;
   }
 }
+@media (max-width: 600px){
+    .about .carousel .card img {
+        width: 375px;
+        height: 275px;
+    }
+    .about .carousel .card .text {
+        font-size: 1.5em;
+
+    }
+}
 
 @media (max-width:500px) {
   .navbar .logo a {
@@ -725,7 +827,16 @@ footer span {
     font-size: 1.2em;
   }
 
+  .about .carousel .card img {
+      width: 300px;
+      height: 250px;
+
+  }
+
   .services .serv-content .card {
       width: 100%;
+  }
+  .newsletter-box h1 {
+      font-size: 2em;
   }
 }
