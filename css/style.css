@@ -218,7 +218,7 @@ section .title::after{
   bottom: -12px;
   border-radius: 15px;
   left: 50%;
-  font-size: 20px;
+  font-size: 21px;
   color: #ed1556;
   padding: 5px;
   background: #fff;
@@ -231,7 +231,7 @@ section .title::after{
   ABOUT SECTION
 
 =================================*/
-.about, .services, .newsletter, .news {
+.about, .services, .newsletter, .news, .teams, .get-involved {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -241,7 +241,7 @@ section .title::after{
 
 .about .about-content,
 .services .serv-content,
-.news {
+.news, .get-involved {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -326,17 +326,19 @@ section .title::after{
   SERVICES SECTION
 
 =================================*/
-.services {
+.services, .teams {
     color: #fff;
     background: #111;
     min-height: 65vh;
 }
 
-.services .title::before {
+.services .title::before,
+.teams .title::before {
     background: #fff;
 }
 
-.services .title::after {
+.services .title::after,
+.teams .title::after {
     background: #111;
     content: "Action";
 }
@@ -676,7 +678,150 @@ section .title::after{
 
 
 
+/*===============================
 
+  ABOUT PAGE
+
+=================================*/
+.about-hero {
+  background: url("../images/trees.jpeg");
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: right;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-hero h1 {
+    padding-top: 3em;
+    font-size: 5em;
+}
+.about-page {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-page .title::after{
+  content: "Our Mission";
+}
+
+.about-page .about-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-page .about-page-content p {
+    font-size: 1.5em;
+}
+
+
+/*===============================
+
+  OUR TEAM SECTION (ABOUT PAGE)
+
+=================================*/
+.teams .title::after {
+    content: "Our Team";
+}
+
+.teams  .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.teams  .carousel .card:hover {
+    background: #ed1556;
+}
+
+.teams  .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.teams  .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.teams  .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams  .carousel .card p {
+    font-size: 18px;
+}
+.teams  .carousel .card img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ed1556;
+}
+.teams  .carousel .card:hover img {
+    border-color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/*===============================
+
+GET INVOLVED SECTION
+
+=================================*/
+.get-involved-hero {
+  background: url("../images/earth-rally.jpeg");
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: right;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-involved-hero h1 {
+    padding-top: 3em;
+    font-size: 5em;
+}
+.get-involved-page {
+  font-family: 'Poppins', sans-serif;
+}
+.get-involved-page h3 {
+    font-size: 2em;
+}
+
+.get-involved-page .title::after{
+  content: "Here's How";
+}
+.get-involved-page .get-involved-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-involved-page .text {
+    padding-bottom: 10px;
+}
+.get-involved-page .text ol li {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ed1556;
+}
+.get-involved-page .get-involved-page-content p {
+    font-size: 1.5em;
+}
 
 
 /*===============================
